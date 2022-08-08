@@ -17,7 +17,7 @@ const total = () =>  Number(input[0].value) + Number(span[0].innerText);
 input[2].onkeyup = () => span[1].innerText = total(); 
   //untuk test apakah inputan angka/bukan
 input.forEach(input => {
-      input.oninput = () => isNaN(Number(input.value))?console.log('ini bukan angka'):console.log('ini angka');
+      input.oninput = () => isNaN(Number(input.value))?input.value = null :console.log('ini angka');
     })
 
 function clear(){
