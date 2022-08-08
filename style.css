@@ -66,7 +66,7 @@ button{
     width: 120px;
     cursor: pointer;
 }
-button[type=submit]:focus{
+button:focus{
     background-color: var(--Strongcyan);
     border: 2px solid var(--Strongcyan);
     color: var(--Verydarkcyan);
