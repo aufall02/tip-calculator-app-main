@@ -14,7 +14,7 @@ input[1].onchange = () => span[0].innerText = ((input[1].value/100)*input[0].val
 input[2].onchange = () => span[1].innerText = (Number(span[0].innerText)*input[2].value).toFixed(2);
   //untuk test apakah inputan angka/bukan
 input.forEach(input => {
-      input.oninput = () => isNaN(Number(input.value))?clear():console.log('ini angka');
+      input.oninput = () => isNaN(Number(input.value))?console.log('ini bukan angka'):console.log('ini angka');
     })
 
 function clear(){
