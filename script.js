@@ -14,7 +14,7 @@ btn.forEach(button => {
 input[1].onchange = () => span[0].innerText = ((input[1].value/100)*input[0].value).toFixed(2);
 
 const total = () =>  Number(input[0].value) + Number(span[0].innerText);
-input[2].onkeyup = () => span[1].innerText = total(); input[2].value = 0; 
+input[2].onkeyup = () => span[1].innerText = total(); 
   //untuk test apakah inputan angka/bukan
 input.forEach(input => {
       input.oninput = () => isNaN(Number(input.value))?console.log('ini bukan angka'):console.log('ini angka');
